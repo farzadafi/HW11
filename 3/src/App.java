@@ -44,6 +44,16 @@ public class App {
                 .filter(product -> product.getCategory().equals(mobile)).min(Comparator.comparing(Product::getPrice)));
          */
 
+        System.out.println("Question 4:");
+        Date dateEquals = new Date(2012,1,10);
+        double sum = orderList.stream()
+                .filter(product -> product.getDate().equals(dateEquals))
+                .mapToDouble(number -> number.getProduct().getPrice()).sum();
+
+        Double average = sum / orderList.stream().filter(product -> product.getDate().equals(dateEquals)).count();
+        System.out.println("average is :" + average);
+
+
 
     }
 }
