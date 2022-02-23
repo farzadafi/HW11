@@ -38,6 +38,12 @@ public class App {
                 .forEach(order -> System.out.println(order.toString()));
          */
 
+        /*
+        System.out.println("Question 3:");
+        System.out.println(productList.stream()
+                .filter(product -> product.getCategory().equals(mobile)).min(Comparator.comparing(Product::getPrice)));
+         */
+
 
     }
 }
