@@ -17,6 +17,7 @@ public class App {
         productList.add(new Product(Pc,"Dell",70000));
 
         /*
+        System.out.println("Question 1:");
         productList.stream()
                 .filter(product -> product.getCategory().equals(Pc))
                 .forEach(product -> System.out.println(product.toString()));
@@ -29,6 +30,13 @@ public class App {
         orderList.add(new Order(new Customer("Reza"),new Product(Pc,"Asus",20000),new Date(2021,9,10)));
         Date dateAfter  = new Date(2010,10,10);
         Date dateBefore = new Date(2020,10,10);
+
+        /*
+        System.out.println("Question 2:");
+        orderList.stream()
+                .filter(order -> order.getDate().after(dateAfter) && order.getDate().before(dateBefore))
+                .forEach(order -> System.out.println(order.toString()));
+         */
 
 
     }
