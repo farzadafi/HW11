@@ -16,13 +16,5 @@ public class Stream {
         list.stream()
                 .collect(Collectors.groupingBy(String::length))
                 .forEach((k,v) -> System.out.printf("{%d=[%d]}%n",k ,v.size()));
-
-
     }
-
-
-
-
-
-
 }
