@@ -15,6 +15,12 @@ public class App {
         productList.add(new Product(Pc,"Asus",40000));
         productList.add(new Product(Pc,"Dell",70000));
 
+        /*
+        productList.stream()
+                .filter(product -> product.getCategory().equals(Pc))
+                .forEach(product -> System.out.println(product.toString()));
+         */
+
 
     }
 }
